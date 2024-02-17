@@ -8,7 +8,7 @@ public class Patterns {
 
     public static void main(String[] args) {
         int count = 0;
-        
+
         for (int i = 5; i > 0; i--) {
             for (int j = 1; j <= 9; j++) {
                 if (j >= i && j <= count + i) {
@@ -227,6 +227,35 @@ public class Patterns {
                 }
 
             }
+            System.out.println("");
+        }
+    }
+
+    /**
+     * Form this pattern
+     * 
+     *         *
+     *
+     *       * * *
+     *
+     *     * * * * *
+     *
+     *   * * * * * * *
+     *
+     * * * * * * * * * *
+     */
+    public static void patternTen() {
+        int count = 0;
+
+        for (int i = 5; i > 0; i--) {
+            for (int j = 1; j <= 9; j++) {
+                if (j >= i && j <= count + i) {
+                    System.out.print("*" + " ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            count = count + 2;
             System.out.println("");
         }
     }
